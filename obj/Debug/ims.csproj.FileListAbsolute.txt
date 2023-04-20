@@ -38,3 +38,9 @@ C:\Users\GBIANG BENEDICT\source\repos\ims\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\GBIANG BENEDICT\source\repos\ims\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\GBIANG BENEDICT\source\repos\ims\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\GBIANG BENEDICT\source\repos\ims\obj\Debug\ims.csproj.CopyComplete
+C:\Users\GBIANG BENEDICT\source\repos\ims\obj\Debug\ims.Dashboard.resources
+C:\Users\GBIANG BENEDICT\source\repos\ims\obj\Debug\ims.Dashboard.en-US.resources
+C:\Users\GBIANG BENEDICT\source\repos\ims\bin\Debug\en-US\ims.resources.dll
+C:\Users\GBIANG BENEDICT\source\repos\ims\obj\Debug\en-US\ims.resources.dll
+C:\Users\GBIANG BENEDICT\source\repos\ims\obj\Debug\ims.Products.resources
+C:\Users\GBIANG BENEDICT\source\repos\ims\obj\Debug\ims.Expenses.resources
