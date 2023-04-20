@@ -337,7 +337,7 @@ namespace ims
 
         private void changePasswordToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            string pv = Prompt.ShowDialog("New Password", "Change Password");
+            string pv = Prompt.ShowDialog("New Password", "Change Password",true);
             string exp = @"^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$";
             Match m = Regex.Match(pv, exp, RegexOptions.IgnoreCase);
             if (pv.Equals(string.Empty))
@@ -350,14 +350,14 @@ namespace ims
             }
             else
             {
-                string pvx = Prompt.ShowDialog("Confirm New Password", "Change Password");
+                string pvx = Prompt.ShowDialog("Confirm New Password", "Change Password",true);
                 if(pvx != pv)
                 {
                     Prompt.Err("Passwords do not match!");
                 }
                 else
                 {
-                    string pvxx = Prompt.ShowDialog("Current Password", "Change Password");
+                    string pvxx = Prompt.ShowDialog("Current Password", "Change Password",true);
                     pvxx = pvxx.Replace("'", "");
                     pvxx = pvxx.Replace("\"", "");
                     DB d = new DB();
@@ -435,7 +435,7 @@ namespace ims
     }
     public static class Prompt
     {
-        public static string ShowDialog(string text, string caption)
+        public static string ShowDialog(string text, string caption, bool pax = false)
         {
             Form prompt = new Form()
             {
@@ -448,6 +448,10 @@ namespace ims
             Label textLabel = new Label() { Left = 20, Top = 15, Text = text };
             TextBox textBox = new TextBox() { Left = 20, Top = 35, Width = 240 };
             Button confirmation = new Button() { Text = "Ok", Left = 150, Width = 110, Top = 70, DialogResult = DialogResult.OK };
+            if (pax)
+            {
+                textBox.PasswordChar = '*';
+            }
             prompt.Controls.Add(textBox);
             prompt.Controls.Add(confirmation);
             prompt.Controls.Add(textLabel);

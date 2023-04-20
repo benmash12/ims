@@ -34,30 +34,30 @@ namespace ims
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Expenses));
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.imsxDataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.imsxDataSet = new ims.imsxDataSet();
-            this.imsxDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.imsxDataSet2 = new ims.imsxDataSet2();
-            this.imsincexpBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.ims_inc_expTableAdapter = new ims.imsxDataSet2TableAdapters.ims_inc_expTableAdapter();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.typeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.titleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.valDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dateaddedDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.imsincexpBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.imsxDataSet2 = new ims.imsxDataSet2();
+            this.imsxDataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.imsxDataSet = new ims.imsxDataSet();
+            this.imsxDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.ims_inc_expTableAdapter = new ims.imsxDataSet2TableAdapters.ims_inc_expTableAdapter();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imsincexpBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imsxDataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imsxDataSet1BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imsxDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imsxDataSetBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imsxDataSet2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imsincexpBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -92,6 +92,37 @@ namespace ims
             this.panel1.Size = new System.Drawing.Size(956, 471);
             this.panel1.TabIndex = 2;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(3, 36);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(76, 13);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Net Income:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label3.Location = new System.Drawing.Point(3, 19);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(83, 13);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Total Expenses:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label1.Location = new System.Drawing.Point(3, 3);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(72, 13);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Total Income:";
+            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.dataGridView1);
@@ -124,61 +155,6 @@ namespace ims
             this.dataGridView1.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_RowEnter);
             this.dataGridView1.UserDeletedRow += new System.Windows.Forms.DataGridViewRowEventHandler(this.dataGridView1_UserDeletedRow);
             this.dataGridView1.UserDeletingRow += new System.Windows.Forms.DataGridViewRowCancelEventHandler(this.dataGridView1_UserDeletingRow);
-            // 
-            // imsxDataSet
-            // 
-            this.imsxDataSet.DataSetName = "imsxDataSet";
-            this.imsxDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // imsxDataSetBindingSource
-            // 
-            this.imsxDataSetBindingSource.DataSource = this.imsxDataSet;
-            this.imsxDataSetBindingSource.Position = 0;
-            // 
-            // imsxDataSet2
-            // 
-            this.imsxDataSet2.DataSetName = "imsxDataSet2";
-            this.imsxDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // imsincexpBindingSource
-            // 
-            this.imsincexpBindingSource.DataMember = "ims_inc_exp";
-            this.imsincexpBindingSource.DataSource = this.imsxDataSet2;
-            // 
-            // ims_inc_expTableAdapter
-            // 
-            this.ims_inc_expTableAdapter.ClearBeforeFill = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label1.Location = new System.Drawing.Point(3, 3);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(72, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Total Income:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label3.Location = new System.Drawing.Point(3, 19);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(83, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Total Expenses:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(3, 36);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(76, 13);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Net Income:";
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -226,6 +202,30 @@ namespace ims
             this.dateaddedDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dateaddedDataGridViewTextBoxColumn.Width = 200;
             // 
+            // imsincexpBindingSource
+            // 
+            this.imsincexpBindingSource.DataMember = "ims_inc_exp";
+            this.imsincexpBindingSource.DataSource = this.imsxDataSet2;
+            // 
+            // imsxDataSet2
+            // 
+            this.imsxDataSet2.DataSetName = "imsxDataSet2";
+            this.imsxDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // imsxDataSet
+            // 
+            this.imsxDataSet.DataSetName = "imsxDataSet";
+            this.imsxDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // imsxDataSetBindingSource
+            // 
+            this.imsxDataSetBindingSource.DataSource = this.imsxDataSet;
+            this.imsxDataSetBindingSource.Position = 0;
+            // 
+            // ims_inc_expTableAdapter
+            // 
+            this.ims_inc_expTableAdapter.ClearBeforeFill = true;
+            // 
             // Expenses
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -244,11 +244,11 @@ namespace ims
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imsincexpBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imsxDataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imsxDataSet1BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imsxDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imsxDataSetBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imsxDataSet2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imsincexpBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
